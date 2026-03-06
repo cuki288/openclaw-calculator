@@ -1,0 +1,35 @@
+agents:
+  Controller:
+    model: ollama/qwen3.5:latest
+    role: orchestration, routing
+    context_limit: 4096
+    description: Manages overall system flow and agent dispatch
+  Planner:
+    model: ollama/qwen3.5:27b
+    role: high-level reasoning, task decomposition
+    context_limit: 8192
+    description: Breaks down complex tasks into actionable steps
+  Researcher:
+    model: ollama/qwen3.5:latest
+    role: information gathering, API analysis
+    context_limit: 4096
+    description: Gathers information and analyzes external APIs
+  Coder:
+    model: ollama/qwen3-coder:30b
+    role: code implementation and fixes
+    context_limit: 16384
+    description: Writes and modifies code for tasks
+  Executor:
+    model: ollama/qwen3.5-a3b-gguf:latest
+    role: command execution, build/testing
+    context_limit: 4096
+    description: Runs shell commands and executes tasks
+  Reviewer:
+    model: codestral:22b
+    role: validation, security, QA
+    context_limit: 8192
+    description: Validates work and ensures integrity
+
+max_concurrency: 2
+mandatory_review: true
+review_trigger: ["coder_done", "executor_done"]
