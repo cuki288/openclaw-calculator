@@ -1,9 +1,54 @@
-=== Daily System Health Check === 2026년  3월  6일 금요일 05시 01분 56초 KST
+# Log
 
-## Mail (2026년  3월  6일 금요일 05시 01분 56초 KST)
-
-- Checked for urgent/unread messages.
-
-## Calendar (2026년  3월  6일 금요일 05시 01분 56초 KST)
-- Checked calendar for next 24-48h.
-
+- 2026-03-06 22:39 KST: Heartbeat check. Backlog high priority: calculator UI layout in progress. Streaming fix/testing underway; monitoring subagent run for completion.
+- 2026-03-06 22:41 KST: Heartbeat execution. Implemented calculator UI layout wiring (App -> Calculator), cleaned App styles, set global theme variables/background.
+- 2026-03-06 23:16 KST: Heartbeat execution. Marked calculator UI layout step complete in backlog and updated project status.
+- 2026-03-07 00:16 KST: Heartbeat execution. Started 중고거래 플랫폼 프로젝트 scaffold (created used-marketplace/README with scope + next steps).
+- 2026-03-07 00:46 KST: Heartbeat execution. Added docker-compose.yml for MySQL/Redis in used-marketplace and marked step complete in README.
+- 2026-03-07 01:16 KST: Heartbeat execution. Created backend/frontend scaffolds with minimal READMEs for next steps.
+- 2026-03-07 01:46 KST: Heartbeat execution. Added Spring Boot backend skeleton (Gradle, app class, application.yml) and marked step complete.
+- 2026-03-07 02:16 KST: Heartbeat execution. Scaffolded React frontend (Vite config, routes, styles) and marked step complete.
+- 2026-03-07 02:46 KST: Heartbeat execution. Added backend entities + basic health/products controllers.
+- 2026-03-07 03:16 KST: Heartbeat execution. Added backend repositories + auth/cart/order controllers.
+- 2026-03-07 03:46 KST: Heartbeat execution. Added permissive security config for API scaffolding.
+- 2026-03-07 04:16 KST: Heartbeat execution. Added sample data seeding + Swagger UI, and updated product API to use repository CRUD.
+- 2026-03-07 04:46 KST: Heartbeat execution. Added frontend products page fetching /api/products and rendering cards.
+- 2026-03-07 05:16 KST: Heartbeat execution. Seeded demo cart item and added frontend cart page fetching /api/cart.
+- 2026-03-07 05:46 KST: Heartbeat execution. Seeded demo order and added frontend orders page fetching /api/orders.
+- 2026-03-07 06:16 KST: Heartbeat execution. Added login/signup form posting to /api/auth/signup.
+- 2026-03-07 06:46 KST: Heartbeat execution. Added home summary page with counts from products/cart/orders.
+- 2026-03-07 07:16 KST: Heartbeat execution. Updated used-marketplace README with progress + next steps.
+- 2026-03-07 07:46 KST: Heartbeat execution. Added quick-start commands to used-marketplace README.
+- 2026-03-07 08:08 KST: Continuous mode. Added ProductCreateRequest DTO with validation and updated ProductController.
+- 2026-03-07 08:09 KST: Continuous mode. Added DTO validation for auth/cart/order endpoints.
+- 2026-03-07 08:16 KST: Continuous mode. Added product create form + detail page UI.
+- 2026-03-07 08:46 KST: Heartbeat execution. Drafted v1.0.0 release notes.
+- 2026-03-07 20:59 KST: Heartbeat check. Backlog clear; no failed builds. Next manual step: enable GitHub Pages source in repo settings.
+- 2026-03-07 21:29 KST: Heartbeat check. Backlog clear; no failed builds. No new tasks executed.
+- 2026-03-07 22:25 KST: Heartbeat check. Backlog clear; no failed builds. No new tasks executed.
+- 2026-03-07 22:22 KST: Heartbeat check. Backlog clear; no failed builds. Monitoring local-LLM orchestration tests; no maintenance run.
+- 2026-03-07 22:23 KST: Heartbeat check. Backlog clear; no failed builds. Monitoring local-LLM orchestration tests; no maintenance run.
+- 2026-03-07 22:55 KST: Heartbeat check. Backlog clear; no failed builds. Light maintenance: reviewed backlog/status and confirmed no action items.
+- 2026-03-07 23:27 KST: Heartbeat execution. Fixed dreamai-clone docker-compose (restored services), updated backend/ frontend Dockerfiles, rebuilt images, and brought containers healthy (postgres/backend/frontend).
+- 2026-03-07 23:30 KST: Maintenance. Added .dockerignore files for dreamai-clone to speed Docker builds.
+- 2026-03-07 23:45 KST: Heartbeat execution. Updated project status to reflect successful orchestration test (containers healthy).
+- 2026-03-08 00:45 KST: Heartbeat execution. Maintenance check: verified docker compose services status (healthy).
+- 2026-03-08 01:15 KST: Heartbeat execution. Maintenance check: verified docker compose services status (healthy).
+- 2026-03-08 02:15 KST: Heartbeat execution. Maintenance check: verified docker compose services status (healthy).
+- 2026-03-08 03:15 KST: Heartbeat execution. Maintenance check: verified docker compose services status (healthy).
+- 2026-03-08 03:45 KST: Heartbeat execution. Maintenance check: verified docker compose services status (healthy).
+- 2026-03-08 00:15 KST: Heartbeat check. Backlog clear; no failed builds. No maintenance run.
+- 2026-03-08 04:15 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 08:16 KST: Re-ran local LLM orchestration test (controller/planner/coder/executor/reviewer) against dreamai-clone docker compose health; services healthy, frontend check on 3000; report saved to docs/LLM_ORCH_TEST_2026-03-08.md.
+- 2026-03-08 09:04 KST: Heartbeat check. Backlog clear; no failed builds. No maintenance run.
+- 2026-03-08 08:34 KST: Heartbeat maintenance: verified dreamai-clone docker compose services are healthy (backend/frontend/postgres).
+- 2026-03-08 08:15 KST: Heartbeat check. Backlog clear; no failed builds. No maintenance run.
+- 2026-03-08 07:45 KST: Heartbeat check. Backlog clear; no failed builds. No maintenance run.
+- 2026-03-08 05:45 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 05:15 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 05:01 KST: Daily healthcheck (read-only): gathered OS info, listening ports, firewall state; ran openclaw security audit --deep and openclaw update status. Noted firewall disabled; pfctl info requires elevated perms.
+- 2026-03-08 04:45 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 06:15 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 06:45 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 07:15 KST: Heartbeat check. Backlog clear; no failed builds. Maintenance deferred (quiet hours).
+- 2026-03-08 10:04 KST: Heartbeat check. Backlog clear; no failed builds. No maintenance run.
